@@ -34,12 +34,13 @@ def run_optimization(data_path: str, num_trials: int):
     X_val, y_val = load_pickle(os.path.join(data_path, "val.pkl"))
 
     def objective(params):
-
-        rf = RandomForestRegressor(**params)
-        rf.fit(X_train, y_train)
-        y_pred = rf.predict(X_val)
-        rmse = mean_squared_error(y_val, y_pred, squared=False)
-        mlflow.log_param("RMSE", rmse)
+        with mlflow.start_run():
+            rf = RandomForestRegressor(**params)
+            mlflow.log_param("params", params)
+            rf.fit(X_train, y_train)
+            y_pred = rf.predict(X_val)
+            rmse = mean_squared_error(y_val, y_pred, squared=False)
+            mlflow.log_param("RMSE", rmse)
 
         return {'loss': rmse, 'status': STATUS_OK}
 
