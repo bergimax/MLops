@@ -1,0 +1,15 @@
+artifact_uri: file:///home/src/mlruns/0/3a6807dc1320475d86855ca7a6791bee/artifacts
+end_time: 1717079437167
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3a6807dc1320475d86855ca7a6791bee
+run_name: likeable-bee-488
+run_uuid: 3a6807dc1320475d86855ca7a6791bee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717079392130
+status: 4
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/src/mlruns/0/7a4d7ac04b8342e6b3053689ce753926/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7a4d7ac04b8342e6b3053689ce753926
+run_name: defiant-slug-629
+run_uuid: 7a4d7ac04b8342e6b3053689ce753926
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717078881750
+status: 1
+tags: []
+user_id: root
